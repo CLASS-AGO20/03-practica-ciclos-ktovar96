@@ -7,8 +7,18 @@ export default class App {
         }
         return facto;
     }
+    convertirAString(numero) {
+        let asterisco = ""
+        let i=1
+        while(i<= numero){
+            asterisco = "*" + asterisco;
+            i++
+        }
+        return asterisco;
+    }
 }
 
 let app = new App();
 
 console.log(app.factorial(5));
+console.log(app.convertirAString(5));
