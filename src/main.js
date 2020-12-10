@@ -16,9 +16,20 @@ export default class App {
         }
         return asterisco;
     }
+    
+    elevar(numero, potencia){
+        let i=1;
+        let resultado= 1;
+        while (i<= potencia){
+            resultado= resultado * numero;
+            i++
+        }
+        return resultado;
+    }
 }
 
 let app = new App();
 
 console.log(app.factorial(5));
 console.log(app.convertirAString(5));
+console.log (app.elevar(5,3));
