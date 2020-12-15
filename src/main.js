@@ -26,10 +26,24 @@ export default class App {
         }
         return resultado;
     }
+
+    obtenerDivisibles(numero) {
+        let i=1;
+        let resultado=0;
+        do {
+            if (numero%i==0 ){
+                resultado++;
+            }
+            i++
+        }
+        while (i<=numero);
+    return resultado;
+}
 }
 
 let app = new App();
 
-console.log(app.factorial(5));
-console.log(app.convertirAString(5));
+console.log (app.factorial(5));
+console.log (app.convertirAString(5));
 console.log (app.elevar(5,3));
+console.log (app.obtenerDivisibles(5 ));
